@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.chapter {
+  position: absolute;
+  top: 125px;
+  left: 50px;
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(212, 15, 15);
+  opacity: 90%;
+  text-shadow: 2px 2px 4px yellow;
+  animation: moveY 4s ease-in-out infinite;
+}
+
+#nine_tail {
+  display: flex;
+  flex-direction: row;
+  background-image: url(public/images/konoha.jpg);
+  background-size: cover;
+  height: 800px;
+  position: relative;
+
+ 
+}
+nav{
+  display: flex;
+  
+}
+h2{
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  top: 30px;
+}
+button{
+  background: transparent;
+  position: relative;
+  top: 20px;
+  left: 400px;
+  border: none;
+  font-size: 21px;
+  border-radius: 50%;
+   height: 60px; 
+  width: 100px; 
+  margin: 10px;  
+}
+
+button:hover{
+  background-color: rgb(114, 212, 114);
+}
+
+
+#kurama {
+  height: 600px;
+  width: auto;
+  position: absolute;
+  top: 200px;
+  animation: moveY 2s ease-in-out infinite;
+}
+@keyframes moveY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+#seal {
+  height: 300px;
+  width: auto;
+  position: absolute;
+  top: 250px;
+  left: 700px;
+  animation: moveX 2s ease-in-out infinite;
+  z-index: 2;
+   pointer-events: none;
+}
+@keyframes moveY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+#minato {
+  height: 500px;
+  position: absolute;
+  right: 100px;
+  top: 300px;
+  animation: moveX 2s ease-in-out infinite;
+}
+@keyframes moveX {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+#firee {
+  display: flex;
+}
+#f1 {
+  z-index: 2;
+  position: absolute;
+  top: 600px;
+  animation-delay: 6s;
+}
+#f2 {
+  position: absolute;
+  top: 600px;
+  left: 0px;
+  animation-delay: 3s;
+}
+#f3 {
+  z-index: 3;
+  position: absolute;
+  top: 600px;
+  left: 0px;
+  animation-delay: 0s;
+}
+.fire {
+  height: 200px;
+  width: 100%;
+  animation: flicker 5s infinite;
+}
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  53.33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.carousel {
+  width: 100%; /* Change this to your desired carousel width */
+  margin: 0 auto;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  color: black;
+  font-size: 60px;
+  width: 50px;
+  height: 50px;
+}
+#team {
+  background-image: url(public/images/training_ground_day.jpg);
+  height: 800px;
+  background-size: cover;
+}
+#ch2 {
+  position: relative;
+  top: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+}
+.tk {
+  height: 400px;
+  position: relative;
+  top: 200px;
+  animation: moveY 2s ease-in-out infinite;
+}
+@keyframes moveY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+#kurama,
+#seal,
+#minato,
+.fire {
+  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
+}
+
+#orochimaruf {
+  background-image: url(public/images/orofight.jpg);
+  height: 900px;
+  background-size: cover;}
+
+.tk1 {
+  height: 400px;
+  position: relative;
+  top: 400px;
+  animation: moveY 2s ease-in-out infinite;}
+
+  #ch3 {
+  position: relative;
+  top: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+}
+#waterfallf {
+  background-image: url(public/images/waterfall.png);
+  height: 900px;
+  background-size: cover;
+}
+.tk3{
+  height: 400px;
+  position: relative;
+  top: 400px;
+  left: 300px;
+  animation: moveY 2s ease-in-out infinite;
+}
+#ch4 {
+  position: relative;
+  top: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+}
