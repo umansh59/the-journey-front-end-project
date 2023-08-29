@@ -3,76 +3,200 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=400px , initial-scale=0.25">
     <title>About Us</title>
     <link rel="stylesheet" href="style.css" />
     <style>
         button {
             position: relative;
             top: 40px;
+            color: aliceblue;
+            align-items: center;
 
         }
 
         body {
             font-family: Arial, sans-serif;
-            background-image: url(public/images/konoha.jpg);
-            background-size: cover;
+
+            overflow-x: hidden;
+            background-color: rgb(23, 21, 21);
+            background-size: 100%;
+            color: white;
+
         }
 
         .container {
             width: 80%;
             margin: 20px auto;
-            background-color: white;
+            background: transparent;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
         }
 
         h1 {
             margin-bottom: 10px;
+            position: relative;
+            top: 10px;
         }
 
         p {
             margin-bottom: 15px;
         }
+
+        .info {
+            background-color: rgb(73, 94, 96, 0.7);
+
+            border: 1px solid white;
+            margin: 10px;
+            padding: 10px;
+            padding-top: 0px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(18, 143, 78);
+        }
+
+        #ourteam {
+            height: fit-content;
+
+        }
+
+        h2 {
+            margin-top: 0px;
+        }
+
+        #showTeamDetails {
+            border: 1px solid black;
+            background-color: rgb(150, 150, 198);
+            border-radius: 5px;
+            position: relative;
+            top: -20px;
+            width: fit-content;
+            left: 425px;
+        }
+
+        #teamDetails {
+            position: relative;
+            left: 100px;
+        }
+
+        #logo {
+            position: relative;
+            top: 50px;
+        }
+
+        video {
+            height: 50%;
+            width: 50%;
+            object-fit: fill;
+            -webkit-transform: scaleX(2);
+            -moz-transform: scaleX(2);
+            position: relative;
+            left: 25%;
+
+        }
+
+        #main {
+            position: absolute;
+            top: 0px;
+
+        }
+
+        footer {
+            position: relative;
+            top: 150px;
+        }
     </style>
 </head>
 
 <body>
-    <nav><a href="index.html"><img src="public/images/leaf.png"
-                style="height: 100px; position: relative; top: 30px;" /></a>
-        <h2>The Journey</h2>
-        <a href="index.html"><button> Home</button></a>
-        <a href="team.html"><button>Team</button></a>
-        <a href="list.html"><button>List</button></a>
-        <a href="about.html"><button>About Us</button></a>
-        <a href="contact.html"><button>Contact</button></a>
+    <video autoplay muted loop id="myVideo">
+        <source id="video" src="sasukenaruto.mp4" type="video/mp4">
+    </video>
+    <section id="main">
+        <nav><a href="index.html"><img src="public/images/sign.jpg"
+                    style="height: 100px; position: relative; top: 30px;" /></a>
+            <h2 id="logo">The Journey</h2>
+            <a href="index.html"><button> Home</button></a>
+            <a href="team.html"><button>Team</button></a>
+            <a href="list.html"><button>List</button></a>
+            <a href="about.html"><button>About Us</button></a>
+            <a href="contact.html"><button>Contact</button></a>
 
 
-    </nav>
-    <div class="container">
-        <h1>About Us</h1>
-        <p>Welcome to our website! We are dedicated to providing you with information about Naruto episodes and helping
-            you decide which ones to watch and which ones to skip. Our goal is to make your Naruto viewing experience
-            enjoyable and efficient. If you have any questions or feedback, don't hesitate to <a
-                href="contact.html">contact us</a>.</p>
-        <h2>Our Team</h2>
-        <p>We are a team of Naruto enthusiasts who have come together to create this resource for fellow fans. Our love
-            for the series drives us to help you navigate the vast world of Naruto episodes.</p>
-        <h3>Meet DevKage Sama</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/litlAXw0nfY?si=saqoCZfEH1vEbNYr"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe><br>
-        Umansh Bansal
-        <br>2110992390<br>
-        G-29 <h2>Our Village
-        </h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13140.519686870972!2d135.0046027!3d34.575579!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000833e8baefd93%3A0xaabdac8aa7d083c!2sNaruto%20x%20Boruto%20park%20Nijigen%20no%20mori!5e0!3m2!1sen!2sin!4v1693201479476!5m2!1sen!2sin"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        </nav>
+        <div class="container">
+            <div class="info">
+                <h1>About Us</h1>
+                <p>Welcome to our website! We are dedicated to providing you with information about Naruto episodes and
+                    helping
+                    you decide which ones to watch and which ones to skip. Our goal is to make your Naruto viewing
+                    experience
+                    enjoyable and efficient. If you have any questions or feedback, don't hesitate to <a
+                        href="contact.html">contact us</a>.</p>
+            </div>
+
+            <div class="info" id="ourteam">
+                <h2>Our Team</h2>
+                <p>We are a team of Naruto enthusiasts who have come together to create this resource for fellow fans.
+                    Our
+                    love
+                    for the series drives us to help you navigate the vast world of Naruto episodes.</p>
+                <button id="showTeamDetails">Show Team Details<br>&#8964;</button>
+                <div class="team-details" id="teamDetails" style="display: none;">
+                    <h3>Meet DevKage Sama</h3>
+                    <iframe width="80%" height="500px"
+                        src="https://www.youtube.com/embed/litlAXw0nfY?si=saqoCZfEH1vEbNYr" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p><br>
+                        Umansh Bansal
+                        <br>2110992390<br>
+                        G-29</p>
+                </div>
+            </div>
+    </section>
+
+    <script>
+        const showTeamDetailsButton = document.getElementById('showTeamDetails');
+        const teamDetailsDiv = document.getElementById('teamDetails');
+
+        showTeamDetailsButton.addEventListener('click', () => {
+            if (teamDetailsDiv.style.display === 'none') {
+                teamDetailsDiv.style.display = 'block';
+            } else {
+                teamDetailsDiv.style.display = 'none';
+            }
+        });
+    </script>
+
+    <!-- ... (the rest of your HTML code) ... -->
+
+    <footer style="display: flex;">
+        <img src="public/images/sign.jpg">
+        <h1 style="color: aliceblue; position: relative; top: 100px; font-size: 30px;">"Naruto" is a Japanese
+            manga
+            and
+            anime series created
+            by Masashi Kishimoto. It follows the journey of Naruto Uzumaki, a young ninja with dreams of
+            becoming
+            the
+            Hokage,
+            the strongest ninja and leader of his village. Throughout its run, "Naruto" has captivated audiences
+            with
+            its
+            intricate storytelling, memorable characters, and themes of friendship, perseverance, and
+            self-discovery
+        </h1>
+    </footer>
+
 </body>
 
 </html>

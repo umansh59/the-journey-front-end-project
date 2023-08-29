@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=400px , initial-scale=0.25">
+
     <link rel="stylesheet" href="style.css" />
     <title>Naruto Filler Episodes</title>
     <style>
@@ -13,6 +15,7 @@
             color: white;
             background-size: cover;
             background-repeat: no-repeat;
+            background-size: 100% 100%;
             background-attachment: fixed;
         }
 
@@ -32,8 +35,8 @@
         }
 
         .gal:hover {
-            height: 500px;
-            width: 650px;
+            height: 550px;
+            width: 700px;
             opacity: 100%;
         }
 
@@ -41,6 +44,49 @@
             position: relative;
             top: 40px;
             color: white;
+        }
+
+        /* Add this to your existing <style>
+            tag */
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+
+        #overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        #overlay-image {
+            width: 100%;
+            max-height: 600px;
+        }
+
+        #close-overlay {
+            background-color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            color: black;
+            position: absolute;
+            left: 800px;
+            top: -20px;
+            border-radius: 10px;
+        }
+
+        #head1 {
+            position: relative;
+            left: 45%;
         }
     </style>
 </head>
@@ -58,17 +104,17 @@
 
     </nav>
     <br>
-    <h1 style="font-family: 'Courier New', Courier, monospace;">
+    <h1 id="head1" style="font-family: 'Courier New', Courier, monospace;">
         THE TEAM
     </h1>
-    <section>
+    <section style="position: relative;left: 80px;">
         <img class="gal" src="public/images/gal1.jpg">
         <img class="gal" src="public/images/gal2.jpg">
         <img class="gal" src="public/images/gal3.jpg">
         <img class="gal" src="public/images/gal4.jpg">
         <img class="gal" src="public/images/gal5.jpg">
         <img class="gal" src="public/images/gal6.jpg">
-        <img class="gal" src="public/images/gal7.jpeg">
+        <img class="gal" src="public/images/gal7.jpg">
         <img class="gal" src="public/images/gal8.jpg">
         <img class="gal" src="public/images/gal9.jpg">
         <img class="gal" src="public/images/gal10.jpg">
@@ -77,6 +123,40 @@
 
 
     </section>
+    <footer style="display: flex;">
+        <img src="public/images/sign.jpg">
+        <h1 style="color: aliceblue; position: relative; top: 100px; font-size: 30px;">"Naruto" is a Japanese manga and
+            anime series created
+            by Masashi Kishimoto. It follows the journey of Naruto Uzumaki, a young ninja with dreams of becoming the
+            Hokage,
+            the strongest ninja and leader of his village. Throughout its run, "Naruto" has captivated audiences with
+            its
+            intricate storytelling, memorable characters, and themes of friendship, perseverance, and self-discovery
+        </h1>
+    </footer>
+    <div id="overlay">
+        <div id="overlay-content">
+            <img id="overlay-image" src="" alt="Zoomed Image">
+            <button id="close-overlay">X</button>
+        </div>
+    </div>
+    <script>
+        const overlay = document.getElementById("overlay");
+        const overlayImage = document.getElementById("overlay-image");
+        const closeOverlay = document.getElementById("close-overlay");
+        const galleryImages = document.querySelectorAll(".gal");
+
+        galleryImages.forEach(image => {
+            image.addEventListener("click", () => {
+                overlayImage.src = image.src;
+                overlay.style.display = "block";
+            });
+        });
+
+        closeOverlay.addEventListener("click", () => {
+            overlay.style.display = "none";
+        });
+    </script>
 </body>
 
 </html>
