@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAnimeList</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="public/css/search.css" />
+    
+<style>
+
+button{
+    left: 70px;
+    color: white;
+    
+}
+footer{
+    background-color: #41403d;
+    height: auto;
+
+}</style>
+</head>
+
+<body>
+    <div class="header">
+        <nav><a href="index.html"><img src="public/images/sign.jpg" style="height: 100px; position: relative;left:-100px;" /></a>
+            <h2 style="position: relative;left:-100px;">The Journey </h2>
+            <a href="index.html"><button> Home</button></a>
+            <a href="team.html"><button>Team</button></a>
+            <a href="list.html"><button>List</button></a>
+            <a href="about.html"><button>About Us</button></a>
+            <a href="contact.html"><button>Contact</button></a>
+            <a href="Search.html"><button>Search</button></a>
+      
+      
+          </nav>
+        
+    </div>
+    <div class="search-box">
+        <input type="search" placeholder="Search your anime eg:Naruto " id="searchInput">
+    </div>
+    <div class="container">
+        <div class="animeInfo" id="animeInfo">
+            <h2 class="text-heading">ANIME INFO</h2>
+            
+        </div>
+        <div class="anime-row">
+            <h2 class="text-heading">Results</h2>
+            <p style="position: relative; right: -500px;font-size: 20px;"> Double click to add any anime to My List</p>
+            <div class="row" id="animeList">
+                <!-- AnimeList content will be displayed here -->
+            </div>
+            <h2 class="text-heading">My List</h2>
+            <div class="row" id="myAnimeList">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="public/script/search.js">
+
+    </script>
+
+
+
+<footer style="display: flex;">
+    <img src="public/images/sign.jpg">
+    <h1 style="color: aliceblue; position: relative; top: 100px; font-size: 30px;">"Naruto" is a Japanese manga and
+      anime series created
+      by Masashi Kishimoto. It follows the journey of Naruto Uzumaki, a young ninja with dreams of becoming the Hokage,
+      the strongest ninja and leader of his village. Throughout its run, "Naruto" has captivated audiences with its
+      intricate storytelling, memorable characters, and themes of friendship, perseverance, and self-discovery</h1>
+  </footer>
+</body>
+
+</html>
